@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Album example · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      #navbar ul{
+    padding:0.75em;
+    padding-bottom:0px;
+    list-style: none;
+    font-size: 0.75em;
+    font-weight:600;
+}
+body{
+    box-sizing: border-box;
+}
+#navbar li{
+    padding:0% 0.75em;
+    color: grey;
+}
+#home{
+    box-sizing: border-box;
+    width: 100hw;
+    display: flex;
+    justify-content: center;
+    height: 20em;
+    text-align: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: auto;
+    color: white;
+    font-weight: bold;
+    background: url(../images/Banner\ image.webp);
+    background-size: contain;
+}
+
+#home-events{
+    margin: 10em;
+}
+#home-input{
+    padding: 0.5em;
+    width: 25em;
+    border-radius: 0;
+}
+#home-image{
+    background-color: white;
+    border: 0px;
+    border-radius: 0;
+}
+.input-group-text img {
+    width: 16px; /* Adjust the width of the image */
+    height: 16px; /* Adjust the height of the image */
+    border-radius: 0px;
+    border: 0px;
+  }
+  ::placeholder{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(202, 202, 202);
+}
+    </style>
+
+    
+  </head>
+  <body>
+    <nav class="d-flex justify-content-evenly pt-2" id="navbar">
+      <ul class="d-flex">
+          <li>Buy</li>
+          <li>Rent</li>
+          <li>Sell</li>
+          <li>Home Loans</li>
+          <li>Agent finder</li>
+      </ul>
+      <div>
+          <img src="../images/z-logo-default.svg" alt="">
+      </div>
+      <ul class="d-flex ">
+          <li>Manage Rentals</li>
+          <li>Advertise</li>
+          <li>Help</li>
+          <li>Sign In</li>
+      </ul>
+  </nav>
+  <section id="home">
+      <div class="home-events">
+          <article>Agents. Tours. Loans. Homes.</article>
+          <div class="input-group mt-3">
+
+              <input type="text" class="form-control" placeholder="Enter an address, neighborhood, city, or ZIP code"
+                  id="home-input">
+
+              <span class="input-group-text" id="home-image">
+                  <img src="https://purepng.com/public/uploads/medium/search-icon-sl7.png" alt="Search Icon">
+              </span>
+          </div>
+      </div>
+  </section>
+   
+<main>
+
+
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg"  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+              <img src="../images/card3.webp" alt="laa" style="
+    height: 220px;
+    width: 419px;
+">
+              <rect  width="100%" height="100%" fill="#55595c"/>
+            
+              <text x="50%" y="50%" fill="#eceeef" dy=".3em" style="
+    font-size: larger;
+    font-weight: bold;
+"> $689,950</text>
+              </svg>
+            <div class="card-body">
+              <p class="card-text">2 bds | 2 ba | 1,088 sqft | Active</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+              <img src="../images/card4.webp" alt="laa" style="
+    height: 220px;
+    width: 419px;
+">
+              <rect width="100%" height="100%" fill="#55595c"/>
+              <text x="50%" y="50%" fill="#eceeef" dy=".3em" style="
+    font-size: larger;
+    font-weight: bold;
+"> $699,950</text>
+            <div class="card-body">
+              <p class="card-text">2 bds | 2 ba | 1,088 sqft | Active</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+              <img src="../images/card5.webp" alt="laa" style="
+    height: 220px;
+    width: 419px;
+">
+              <rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="
+    font-size: larger;
+    font-weight: bold;
+"> $804,950</text>
+            <div class="card-body">
+              <p class="card-text">2 bds | 2 ba | 1,088 sqft | Active</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+              <img src="../images/card4.webp" alt="laa" style="
+    height: 220px;
+    width: 419px;
+">
+              <rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="
+    font-size: larger;
+    font-weight: bold;
+"> $689,950</text>
+            <div class="card-body">
+              <p class="card-text">2 bds | 2 ba | 1,088 sqft | Active</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+              <img src="../images/card5.webp" alt="laa" style="
+    height: 220px;
+    width: 419px;
+">
+              <rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="
+    font-size: larger;
+    font-weight: bold;
+"> $699,950</text>
+            <div class="card-body">
+              <p class="card-text">2 bds | 2 ba | 1,088 sqft | Active</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+              <img src="../images/card6.webp" alt="laa" style="
+    height: 220px;
+    width: 419px;
+">
+              <rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="
+    font-size: larger;
+    font-weight: bold;
+"> $804,950</text>
+            <div class="card-body">
+              <p class="card-text">2 bds | 2 ba | 1,088 sqft | Active</p>
+              <div class="d-flex justify-content-between align-items-center">
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        
+       
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
