@@ -1,0 +1,54 @@
+#navbar ul{
+    padding:0.75em;
+    padding-bottom:0px;
+    list-style: none;
+    font-size: 0.75em;
+    font-weight:600;
+}
+body{
+    box-sizing: border-box;
+}
+#navbar li{
+    padding:0% 0.75em;
+    color: grey;
+}
+#home{
+    box-sizing: border-box;
+    width: 100hw;
+    display: flex;
+    justify-content: center;
+    height: 20em;
+    text-align: center;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: auto;
+    color: white;
+    font-weight: bold;
+    background: url(./assets/Banner\ image.webp);
+    background-size: contain;
+}
+
+#home-events{
+    margin: 10em;
+}
+#home-input{
+    padding: 0.5em;
+    width: 25em;
+    border-radius: 0;
+}
+#home-image{
+    background-color: white;
+    border: 0px;
+    border-radius: 0;
+}
+.input-group-text img {
+    width: 16px; /* Adjust the width of the image */
+    height: 16px; /* Adjust the height of the image */
+    border-radius: 0px;
+    border: 0px;
+  }
+  ::placeholder{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(202, 202, 202);
+}
